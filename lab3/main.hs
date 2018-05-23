@@ -1,6 +1,6 @@
-main = print(checkArray(divideArray([1,2,3,4,5,6,7,8,9,10], 5)))
-
+main = print(prime [2..100])
 numbers = [1,2,3]
+dupa = head numbers
 
 
 add x a = x:a
@@ -11,4 +11,10 @@ checkArray(x) = filter (>4) x                                                   
 -- filter p x p-function x list on which p is
 
 prime :: [Int] -> [Int]
-prime x =
+prime x = [g n | n <- x, f n]
+    where  f = \a -> a `mod` item == 0
+            where item = head x
+
+                
+        
+        
